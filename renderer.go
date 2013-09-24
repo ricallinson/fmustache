@@ -1,7 +1,7 @@
 package fmustache
 
 import(
-	"github.com/hoisie/mustache"
+    "github.com/hoisie/mustache"
 )
 
 type Fmustache struct {
@@ -9,14 +9,14 @@ type Fmustache struct {
 }
 
 func Make() (*Fmustache) {
-	this := &Fmustache{}
-	this.cache = map[string]*mustache.Template{}
-	return this
+    this := &Fmustache{}
+    this.cache = map[string]*mustache.Template{}
+    return this
 }
 
 func (this *Fmustache) Render(f string, o ...interface{}) (string, error) {
 
-	t, ok := this.cache[f]
+    t, ok := this.cache[f]
 
     if ok == false {
         tmpl, err := mustache.ParseFile(f)
