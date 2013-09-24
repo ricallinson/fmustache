@@ -1,6 +1,6 @@
 # Fmustache
 
-Mustache template render for Forgery.
+Mustache template renderer for Forgery.
 
 ## Install
 
